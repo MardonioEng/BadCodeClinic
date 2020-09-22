@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="680.0" style="-fx-background-color: #A9A9A9;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ifce.controller.LoginViewControler">
+   <children>
+      <AnchorPane layoutX="169.0" layoutY="74.0" prefHeight="330.0" prefWidth="340.0" style="-fx-background-color: #212121;" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="171.0" AnchorPane.topAnchor="74.0">
+         <children>
+            <Label layoutX="97.0" layoutY="25.0" prefHeight="37.0" prefWidth="147.0" text="Bad Code" textAlignment="CENTER" textFill="#eeeeee" AnchorPane.bottomAnchor="268.0" AnchorPane.leftAnchor="97.0" AnchorPane.rightAnchor="96.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="107.0" layoutY="72.0" prefHeight="4.0" prefWidth="126.0" style="-fx-background-color: #76ff03;" AnchorPane.bottomAnchor="254.0" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="107.0" AnchorPane.topAnchor="72.0" />
+            <JFXTextField fx:id="txtLogin" focusColor="#00ff40" labelFloat="true" layoutX="107.0" layoutY="114.0" prefHeight="37.0" prefWidth="172.0" promptText="Login" unFocusColor="BLACK">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtSenha" focusColor="#00ff40" labelFloat="true" layoutX="102.0" layoutY="189.0" prefHeight="37.0" prefWidth="172.0" promptText="Senha" unFocusColor="BLACK">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnLogin" layoutX="103.0" layoutY="264.0" onAction="#login" prefHeight="37.0" prefWidth="134.0" ripplerFill="#2041e5" style="-fx-background-color: #76ff03; -fx-background-radius: 90;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="67.0" layoutY="193.0">
+               <image>
+                  <Image url="@icons/icons8-password-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="67.0" layoutY="123.0">
+               <image>
+                  <Image url="@icons/icons8-user-male-24.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
