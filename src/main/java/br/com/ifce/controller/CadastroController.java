@@ -27,6 +27,7 @@ public class CadastroController implements Initializable {
 	@FXML private JFXButton btnSair;
 	@FXML private JFXButton btnSalvar;
 	@FXML private TextField tfNome;
+    @FXML private TextField tfComorbidade;
 	@FXML private TextField tfCpf;
 	@FXML private TextField tfDataNascimento;
 	@FXML private TextField tfRg;
@@ -85,7 +86,7 @@ public class CadastroController implements Initializable {
 										 tfCidade.getText(), tfCidade.getText(), 
 										 tfRua.getText(), tfCep.getText(),
 										 tfNumero.getText(), tfBairro.getText(), tfComplemento.getText(),
-										 "Complemento"); // TODO tratar
+										 tfComorbidade.getText());
 		
 		PacienteDAO.getInstance().persist(paciente);
 

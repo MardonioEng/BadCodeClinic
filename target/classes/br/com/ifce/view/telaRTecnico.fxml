@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ifce.controller.RTecnicoController">
    <children>
-      <Label layoutX="122.0" layoutY="29.0" prefHeight="26.0" prefWidth="146.0" text="R Tecnico">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
+      <AnchorPane layoutX="14.0" prefHeight="600.0" prefWidth="150.0" style="-fx-background-color: #bf00ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="650.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="btnSair" layoutX="10.0" layoutY="515.0" prefHeight="45.0" prefWidth="95.0" style="-fx-background-color: #d966ff;" text="SAIR" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnEmitirResultado" layoutX="5.0" layoutY="432.0" prefHeight="45.0" prefWidth="95.0" style="-fx-background-color: #d966ff;" text="EMITIR RESULTADO" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="148.0" layoutY="30.0" prefHeight="69.0" prefWidth="650.0" style="-fx-background-color: #9900cc;" AnchorPane.bottomAnchor="540.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="13.0" text="Emitir resultado do Exame" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblPacientes" layoutX="169.0" layoutY="76.0" prefHeight="505.0" prefWidth="608.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="37.0" text="ID" />
+          <TableColumn fx:id="colNome" prefWidth="161.0" text="Nome" />
+            <TableColumn fx:id="colCpf" prefWidth="106.0" text="CPF" />
+            <TableColumn fx:id="colDataNascimento" prefWidth="135.0" text="Data de nascimento" />
+            <TableColumn fx:id="colTipoColeta" prefWidth="168.0" text="Tipo de coleta" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

@@ -1,10 +1,5 @@
 package br.com.ifce.testes;
 
-import java.util.List;
-
-import br.com.ifce.dao.ColetaDAO;
-import br.com.ifce.model.Coleta;
-
 public class TestesClassesDao {
 
 	public static void main(String[] args) {
@@ -63,6 +58,16 @@ public class TestesClassesDao {
 		/*
 		List<Coleta> coletas = ColetaDAO.getInstance().findAll();
 		coletas.stream().forEach(e -> System.out.println(e.getPaciente().getNome()));
+		*/
+		
+		// ------- Inserir um exame
+		/*
+		Usuario responsavelTecnico = UsuarioDAO.getInstance().getById(2L);
+		Paciente paciente = PacienteDAO.getInstance().getById(3L);
+		
+		Exame exame = new Exame(null, LocalDate.now(), Conclusao.NAO_DETECTADO, paciente, responsavelTecnico);
+		
+		ExameDAO.getInstance().persist(exame);
 		*/
 		}						
 }
