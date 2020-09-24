@@ -11,14 +11,14 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ifce.controller.CadastroController">
    <children>
-      <AnchorPane layoutX="14.0" prefHeight="600.0" prefWidth="123.0" style="-fx-background-color: #bf00ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="650.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane layoutX="14.0" prefHeight="600.0" prefWidth="150.0" style="-fx-background-color: #bf00ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="650.0" AnchorPane.topAnchor="0.0">
          <children>
-            <JFXButton layoutX="10.0" layoutY="515.0" prefHeight="45.0" prefWidth="95.0" style="-fx-background-color: #d966ff;" text="SAIR" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <JFXButton fx:id="btnSair" layoutX="10.0" layoutY="515.0" onAction="#onBtnSairAction" prefHeight="45.0" prefWidth="95.0" style="-fx-background-color: #d966ff;" text="SAIR" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="5.0" layoutY="432.0" prefHeight="45.0" prefWidth="95.0" style="-fx-background-color: #d966ff;" text="SALVAR" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <JFXButton fx:id="btnSalvar" layoutX="5.0" layoutY="432.0" onAction="#onBtnSalvarAction" prefHeight="45.0" prefWidth="95.0" style="-fx-background-color: #d966ff;" text="SALVAR" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -44,14 +44,14 @@
                      </font>
                   </Label>
                   <Line endX="497.0" layoutX="130.0" layoutY="41.0" startX="-100.0" strokeWidth="2.0" />
-                  <TextField layoutX="129.0" layoutY="62.0" prefHeight="25.0" prefWidth="489.0" style="-fx-background-radius: 10px;" />
+                  <TextField fx:id="tfNome" layoutX="129.0" layoutY="62.0" prefHeight="25.0" prefWidth="489.0" style="-fx-background-radius: 10px;" />
                   <Label layoutX="95.0" layoutY="108.0" text="CPF:" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="108.0" />
                   <Label layoutX="82.0" layoutY="66.0" text="Nome:" AnchorPane.leftAnchor="82.0" AnchorPane.topAnchor="66.0" />
                   <Label layoutX="11.0" layoutY="151.0" text="Data de nascimento:" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="11.0" />
-                  <TextField layoutX="130.0" layoutY="105.0" prefHeight="25.0" prefWidth="156.0" style="-fx-background-radius: 10px;" />
-                  <TextField layoutX="130.0" layoutY="147.0" prefHeight="25.0" prefWidth="153.0" style="-fx-background-radius: 10px;" />
+                  <TextField fx:id="tfCpf" layoutX="130.0" layoutY="105.0" prefHeight="25.0" prefWidth="156.0" style="-fx-background-radius: 10px;" />
+                  <TextField fx:id="tfDataNascimento" layoutX="130.0" layoutY="147.0" prefHeight="25.0" prefWidth="153.0" style="-fx-background-radius: 10px;" />
                   <Label layoutX="365.0" layoutY="108.0" text="RG:" />
-                  <TextField layoutX="401.0" layoutY="104.0" prefHeight="25.0" prefWidth="154.0" style="-fx-background-radius: 10px;" />
+                  <TextField fx:id="tfRg" layoutX="401.0" layoutY="104.0" prefHeight="25.0" prefWidth="154.0" style="-fx-background-radius: 10px;" />
                   <Label layoutX="356.0" layoutY="150.0" text="Sexo:" />
                   <ComboBox fx:id="cbSexo" layoutX="404.0" layoutY="148.0" prefWidth="150.0" />
                </children>
@@ -65,19 +65,19 @@
                      </font>
                   </Label>
                   <Label layoutX="97.0" layoutY="62.0" text="CEP:" />
-                  <TextField layoutX="131.0" layoutY="58.0" prefHeight="25.0" prefWidth="110.0" style="-fx-background-radius: 10px;" />
+                  <TextField fx:id="tfCep" layoutX="131.0" layoutY="58.0" prefHeight="25.0" prefWidth="110.0" style="-fx-background-radius: 10px;" />
                   <Label layoutX="97.0" layoutY="107.0" text="Rua:" />
                   <Label layoutX="86.0" layoutY="147.0" text="Bairro:" />
-                  <TextField layoutX="131.0" layoutY="102.0" prefHeight="25.0" prefWidth="287.0" style="-fx-background-radius: 10px;" />
-                  <TextField layoutX="131.0" layoutY="145.0" prefHeight="25.0" prefWidth="288.0" style="-fx-background-radius: 10px;" />
+                  <TextField fx:id="tfRua" layoutX="131.0" layoutY="102.0" prefHeight="25.0" prefWidth="287.0" style="-fx-background-radius: 10px;" />
+                  <TextField fx:id="tfBairro" layoutX="131.0" layoutY="145.0" prefHeight="25.0" prefWidth="288.0" style="-fx-background-radius: 10px;" />
                   <Label layoutX="258.0" layoutY="61.0" text="Estado:" />
-                  <TextField layoutX="309.0" layoutY="57.0" prefHeight="25.0" prefWidth="110.0" style="-fx-background-radius: 10px;" />
+                  <TextField fx:id="tfEstado" layoutX="309.0" layoutY="57.0" prefHeight="25.0" prefWidth="110.0" style="-fx-background-radius: 10px;" />
                   <Label layoutX="465.0" layoutY="61.0" text="Cidade:" />
-                  <TextField layoutX="516.0" layoutY="57.0" prefHeight="25.0" prefWidth="110.0" style="-fx-background-radius: 10px;" />
+                  <TextField fx:id="tfCidade" layoutX="516.0" layoutY="57.0" prefHeight="25.0" prefWidth="110.0" style="-fx-background-radius: 10px;" />
                   <Label layoutX="457.0" layoutY="105.0" text="Número:" />
-                  <TextField layoutX="516.0" layoutY="101.0" prefHeight="25.0" prefWidth="56.0" style="-fx-background-radius: 10px;" />
+                  <TextField fx:id="tfNumero" layoutX="516.0" layoutY="101.0" prefHeight="25.0" prefWidth="56.0" style="-fx-background-radius: 10px;" />
                   <Label layoutX="432.0" layoutY="149.0" text="Complemento:" />
-                  <TextField layoutX="514.0" layoutY="145.0" prefHeight="25.0" prefWidth="110.0" style="-fx-background-radius: 10px;" />
+                  <TextField fx:id="tfComplemento" layoutX="514.0" layoutY="145.0" prefHeight="25.0" prefWidth="110.0" style="-fx-background-radius: 10px;" />
                </children>
             </AnchorPane>
          </children>
@@ -91,8 +91,8 @@
             </Label>
             <Line endX="497.0" layoutX="132.0" layoutY="38.0" startX="-100.0" strokeWidth="2.0" />
             <Label layoutX="79.0" layoutY="64.0" text="Coletor:" />
-            <TextField layoutX="132.0" layoutY="61.0" prefHeight="25.0" prefWidth="489.0" style="-fx-background-radius: 10px;" />
-            <Label layoutX="79.0" layoutY="111.0" text="Tipo de material coleatado:" />
+            <TextField fx:id="tfColetor" layoutX="132.0" layoutY="61.0" prefHeight="25.0" prefWidth="489.0" style="-fx-background-radius: 10px;" />
+            <Label layoutX="79.0" layoutY="111.0" text="Tipo de material coletado:" />
             <ComboBox fx:id="cbTipoMaterialColetado" layoutX="233.0" layoutY="107.0" prefHeight="25.0" prefWidth="234.0" />
          </children>
       </AnchorPane>

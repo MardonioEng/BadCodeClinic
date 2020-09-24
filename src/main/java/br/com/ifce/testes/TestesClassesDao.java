@@ -2,6 +2,7 @@ package br.com.ifce.testes;
 
 import java.time.LocalDate;
 
+import br.com.ifce.dao.LaboratorioDAO;
 import br.com.ifce.dao.UsuarioDAO;
 import br.com.ifce.model.Laboratorio;
 import br.com.ifce.model.Usuario;
@@ -12,7 +13,7 @@ public class TestesClassesDao {
 	public static void main(String[] args) {
 
 		// ------- Cadastrar laboratorio e dois usuarios (Cadastro e Responsável Técnico)
-		/*
+
 		Laboratorio laboratorio = new Laboratorio(null, "Clinic Bad Code", 500);
 		
 		Usuario cadastro = new Usuario(null, "Cadastro", 123L, LocalDate.of(2000, 5, 25), "Rua 1", "Fortaleza", "ceará", TipoUsuario.CADASTRO, "cadastro", "cadastro", laboratorio);
@@ -21,7 +22,7 @@ public class TestesClassesDao {
 		LaboratorioDAO.getInstance().persist(laboratorio);
 		UsuarioDAO.getInstance().persist(cadastro);
 		UsuarioDAO.getInstance().persist(responsavelTecnico);
-		 */
+
 		
 		// ------- Alterar o Número de Testes do Laboratório
 		/*
@@ -42,7 +43,7 @@ public class TestesClassesDao {
 		
 		PacienteDAO.getInstance().persist(paciente1);
 		ColetaDAO.getInstance().persist(coleta1);
-		*/
+		 */
 		
 		// ------- Cadastar um paciente e fazer uma coleta (USUARIO RESPONSÁVEL TÉCNICO)
 			//obs.: é necessário buscar o paciente e o responsável técnico antes;
@@ -54,10 +55,12 @@ public class TestesClassesDao {
 		*/
 		
 		// ------- Cadastrar Supervisor
+		/*
 		Laboratorio laboratorio = new Laboratorio(1L, "Clinic Bad Code", 500);
 		Usuario supervisor = new Usuario(null, "Supervisor", 888L, LocalDate.of(2001, 12, 10), "rua lima", "Acarape", "Ceara", TipoUsuario.SUPERVISOR, "supervisor", "supervisor", laboratorio);
 		
 		UsuarioDAO.getInstance().persist(supervisor);
+		*/
 		
 		}						
 }
