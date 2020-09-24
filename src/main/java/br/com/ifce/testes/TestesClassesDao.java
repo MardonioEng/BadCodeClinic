@@ -1,19 +1,16 @@
 package br.com.ifce.testes;
 
-import java.time.LocalDate;
+import java.util.List;
 
-import br.com.ifce.dao.LaboratorioDAO;
-import br.com.ifce.dao.UsuarioDAO;
-import br.com.ifce.model.Laboratorio;
-import br.com.ifce.model.Usuario;
-import br.com.ifce.model.enums.TipoUsuario;
+import br.com.ifce.dao.ColetaDAO;
+import br.com.ifce.model.Coleta;
 
 public class TestesClassesDao {
 
 	public static void main(String[] args) {
 
 		// ------- Cadastrar laboratorio e dois usuarios (Cadastro e Responsável Técnico)
-
+		/*
 		Laboratorio laboratorio = new Laboratorio(null, "Clinic Bad Code", 500);
 		
 		Usuario cadastro = new Usuario(null, "Cadastro", 123L, LocalDate.of(2000, 5, 25), "Rua 1", "Fortaleza", "ceará", TipoUsuario.CADASTRO, "cadastro", "cadastro", laboratorio);
@@ -22,7 +19,7 @@ public class TestesClassesDao {
 		LaboratorioDAO.getInstance().persist(laboratorio);
 		UsuarioDAO.getInstance().persist(cadastro);
 		UsuarioDAO.getInstance().persist(responsavelTecnico);
-
+		*/
 		
 		// ------- Alterar o Número de Testes do Laboratório
 		/*
@@ -62,5 +59,10 @@ public class TestesClassesDao {
 		UsuarioDAO.getInstance().persist(supervisor);
 		*/
 		
+		// ------- Busca dos pacientes a partir da Coleta
+		/*
+		List<Coleta> coletas = ColetaDAO.getInstance().findAll();
+		coletas.stream().forEach(e -> System.out.println(e.getPaciente().getNome()));
+		*/
 		}						
 }
