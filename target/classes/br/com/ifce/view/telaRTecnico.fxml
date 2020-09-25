@@ -11,12 +11,12 @@
    <children>
       <AnchorPane layoutX="14.0" prefHeight="600.0" prefWidth="150.0" style="-fx-background-color: #bf00ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="650.0" AnchorPane.topAnchor="0.0">
          <children>
-            <JFXButton fx:id="btnSair" layoutX="10.0" layoutY="515.0" prefHeight="45.0" prefWidth="95.0" style="-fx-background-color: #d966ff;" text="SAIR" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <JFXButton fx:id="btnSair" layoutX="10.0" layoutY="515.0" onAction="#onBtnSairAction" prefHeight="45.0" prefWidth="95.0" style="-fx-background-color: #d966ff;" text="SAIR" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnEmitirResultado" layoutX="5.0" layoutY="432.0" prefHeight="45.0" prefWidth="95.0" style="-fx-background-color: #d966ff;" text="EMITIR RESULTADO" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <JFXButton fx:id="btnEmitirResultado" layoutX="5.0" layoutY="432.0" onAction="#onBtnEmitirResultadoAction" prefHeight="45.0" prefWidth="95.0" style="-fx-background-color: #d966ff;" text="EMITIR RESULTADO" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
