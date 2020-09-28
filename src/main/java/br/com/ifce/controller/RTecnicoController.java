@@ -91,10 +91,10 @@ public class RTecnicoController implements Initializable {
 		
 		Long idSelecionado = tblPacientes.getSelectionModel().getSelectedItem().getId();
 		System.out.println(idSelecionado);
-		/*
+
 		TelaRTecnicoResultado telaRTecnicoResultado = new TelaRTecnicoResultado();
 		telaRTecnicoResultado.start(new Stage());
-		*/
+
 	}
 	
 	@FXML
